@@ -1,0 +1,132 @@
+html, body, #app{ 
+  height: 100%; 
+  margin: 0; 
+  padding: 0;
+}
+ body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  div:focus{
+    outline: none;
+  }
+  
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  a,
+  a:focus,
+  a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .clearfix {
+    &:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+  }
+  /*fade*/
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.28s;
+  }
+  
+  .fade-enter,
+  .fade-leave-active {
+    opacity: 0;
+  }
+  /*fade*/
+  .breadcrumb-enter-active,
+  .breadcrumb-leave-active {
+    transition: all .5s;
+  }
+  
+  .breadcrumb-enter,
+  .breadcrumb-leave-active {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  .breadcrumb-move {
+    transition: all .5s;
+  }
+  
+  .breadcrumb-leave-active {
+    position: absolute;
+  }
+  .el-dialog {
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100% - 120px);
+    min-height: 300px;
+    max-width: calc(100% - 30px);
+     border-radius: 6px !important;
+  }
+  .el-dialog__body {
+    transform: translate3d(0, 0, 0);
+    padding: 20px 50px !important;
+    overflow: auto;
+  }
+  .el-dialog__header {
+    border-radius: 6px 6px 0 0 !important;
+    background-image: linear-gradient(#ffffff, #f6f6f6);
+    padding: 14px !important;
+    border-bottom: 1px solid #dcdfe6;
+     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  }
+  .el-dialog__footer {
+    padding: 12px 20px 12px 20px !important;
+    border-top: 1px solid #dcdfe6;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+     background-image: linear-gradient(#f6f6f6, #ffffff);
+    border-radius: 0 0 6px 6px !important;
+  }
+  .el-dialog__headerbtn {
+    position: absolute;
+    top: 14px !important;
+    right: 20px;
+    padding: 0;
+    background: 0 0;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    font-size: 24px !important;
+  }
+  .el-dialog__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ui-dialog_ico {
+    font-size: 16px !important;
+    color: #3c8dbc;
+    font-weight: bold;
+  }
+  .ui-dialog_ico i {
+    margin: 0 5px 0 5px;
+    font-size: 18px;
+  }
+  .el-divider__text {
+    color: #3c8dbc !important;
+  }
+  .el-divider__text i {
+    margin-right: 4px;
+  }
